@@ -13,9 +13,7 @@ function pagination(page, limit, records) {
 	};
 	result.totalPages = Math.ceil(total / limit);
 	result.next =
-		+page >= result.totalPages || !result.totalPages
-			? null
-			: Number(page) + 1;
+		+page >= result.totalPages || !result.totalPages ? null : Number(page) + 1;
 	result.hasNext = !!result.next;
 	result.prev = +page === 1 ? null : Number(page) - 1;
 	result.hasPrev = !!result.prev;

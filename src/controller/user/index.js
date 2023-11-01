@@ -43,9 +43,9 @@ exports.get = async (req, res) => {
 			}),
 		);
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
@@ -61,9 +61,9 @@ exports.show = async (req, res) => {
 			}),
 		);
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
@@ -91,9 +91,9 @@ exports.create = async (req, res) => {
 		);
 		res.status(200).send(successResponse({ data: user }));
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
@@ -112,9 +112,9 @@ exports.update = async (req, res) => {
 		});
 		res.status(200).send(successResponse({ data: user }));
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
@@ -127,9 +127,9 @@ exports.delete = async (req, res) => {
 		user.destroy();
 		res.status(200).send(successResponse());
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
@@ -144,9 +144,9 @@ exports.activate = async (req, res) => {
 		});
 		res.status(200).send(successResponse({ data: user }));
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
@@ -161,9 +161,9 @@ exports.deActivate = async (req, res) => {
 		});
 		res.status(200).send(successResponse({ data: user }));
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };

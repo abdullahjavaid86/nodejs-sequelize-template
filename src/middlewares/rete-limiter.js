@@ -13,12 +13,14 @@ const bruteStore = appInDevelopment()
 	: new sequelizeStore(db.sequelize, 'brute_store', {}, (store) => store);
 
 const failCallback = (_req, res, _next, nextValidRequestDate) => {
-	res.status(429).send(
-		errorResponse(
-			`Too many attempts, please wait for some time: ${nextValidRequestDate}`,
-			429,
-		),
-	);
+	res
+		.status(429)
+		.send(
+			errorResponse(
+				`Too many attempts, please wait for some time: ${nextValidRequestDate}`,
+				429,
+			),
+		);
 };
 
 const rateLimiter = new expressBrute(bruteStore, {

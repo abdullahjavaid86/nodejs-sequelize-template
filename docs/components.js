@@ -49,8 +49,7 @@ module.exports = {
 					},
 					image: {
 						type: 'object',
-						description:
-							'Image object containing image url and other info',
+						description: 'Image object containing image url and other info',
 						properties: {
 							name: {
 								type: 'string',
@@ -84,14 +83,12 @@ module.exports = {
 					},
 					createdAt: {
 						type: 'timestamp',
-						description:
-							'When the record has been entered in the database',
+						description: 'When the record has been entered in the database',
 						example: '2023-04-17 09:08:33',
 					},
 					updatedAt: {
 						type: 'timestamp',
-						description:
-							'When the record has been updated in the database',
+						description: 'When the record has been updated in the database',
 						example: '2023-04-17 09:08:33',
 					},
 				},

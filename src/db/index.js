@@ -25,9 +25,7 @@ const connectDb = () => {
 	sequelize
 		.authenticate()
 		.then(() => {
-			logger.info(
-				'Database connection has been established successfully.',
-			);
+			logger.info('Database connection has been established successfully.');
 		})
 		.catch((error) => {
 			logger.error(error);

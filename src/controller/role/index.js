@@ -29,15 +29,13 @@ exports.get = async (req, res) => {
 
 		res.status(200).send(
 			successResponse({
-				data: requestForAll
-					? roles.rows
-					: pagination(page, limit, roles),
+				data: requestForAll ? roles.rows : pagination(page, limit, roles),
 			}),
 		);
 	} catch (e) {
-		res.status(e?.status ?? 500).send(
-			errorResponse(e.message, e?.status ?? 500),
-		);
+		res
+			.status(e?.status ?? 500)
+			.send(errorResponse(e.message, e?.status ?? 500));
 		logger.error(e);
 	}
 };
