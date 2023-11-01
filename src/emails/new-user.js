@@ -8,8 +8,8 @@
  * @returns {string}
  */
 exports.newUserEmail = (userName, email, password) => {
-  const link = process.env.FRONT_END_BASE_URL;
-  return `
+	const link = process.env.FRONT_END_BASE_URL;
+	return `
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
       <head>
         <meta charset="UTF-8" />

@@ -7,8 +7,8 @@
  * @returns {string}
  */
 exports.resetPasswordTemplate = (userId, token) => {
-  const resetLink = `${process.env.FRONT_END_BASE_URL}/auth/password-reset/${userId}/${token}`;
-  return `
+	const resetLink = `${process.env.FRONT_END_BASE_URL}/auth/password-reset/${userId}/${token}`;
+	return `
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
       <head>
         <meta charset="UTF-8" />

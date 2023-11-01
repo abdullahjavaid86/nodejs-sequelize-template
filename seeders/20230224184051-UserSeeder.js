@@ -18,7 +18,9 @@ module.exports = {
 		 */
 		const adminRole = await Role.findOne({ where: { name: 'Admin' } });
 		if (!adminRole) {
-			throw new Error("Make sure you have seeded roles into database and the admin role exists");
+			throw new Error(
+				'Make sure you have seeded roles into database and the admin role exists',
+			);
 		}
 		return User.create({
 			first_name: 'John',

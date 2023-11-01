@@ -1,3 +1,4 @@
+<!-- @format -->
 
 # Project Title
 
@@ -17,26 +18,26 @@ This project follows the approach of Model and controller structure
 
 ## Tech/Framework used
 
-- Node.js 14 or 16
-- express
-- yarn
-- socket.io
-- mysql
-- sequelize ORM
-- rate-limiter
-- cors
-- jwt
+-   Node.js 14 or 16
+-   express
+-   yarn
+-   socket.io
+-   mysql
+-   sequelize ORM
+-   rate-limiter
+-   cors
+-   jwt
 
 ## Features
 
-- prettier
-- eslint
-- husky
-- swagger
-- joi validation
-- image resize option
-- module aliases (see `jsconfig.json` for reference)
-- middlewares
+-   prettier
+-   eslint
+-   husky
+-   swagger
+-   joi validation
+-   image resize option
+-   module aliases (see `jsconfig.json` for reference)
+-   middlewares
 
 # Run Locally
 
@@ -88,11 +89,11 @@ Start the server
 
 ## Database Setup
 
-- Run `yarn migration:up` to migrate tables in database
+-   Run `yarn migration:up` to migrate tables in database
 
 ## Database Seeders
 
-- Run `yarn seed:all` to insert initial data into database
+-   Run `yarn seed:all` to insert initial data into database
 
 ### Notice
 
@@ -101,7 +102,7 @@ To check the server open the browser and enter <http://localhost:4000>
 
 ## Authors
 
-- [@abdullahjavaid86](https://www.github.com/abdullahjavaid86)
+-   [@abdullahjavaid86](https://www.github.com/abdullahjavaid86)
 
 ## API Reference
 
@@ -111,6 +112,6 @@ To check the server open the browser and enter <http://localhost:4000>
   GET /api/v1/users
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
+| Parameter      | Type     | Description                                      |
+| :------------- | :------- | :----------------------------------------------- |
 | `x-auth-token` | `string` | **Required**. user authorization token in header |
