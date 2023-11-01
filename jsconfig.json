@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"paths": {
+			"@root/*": ["./*"],
+			"@src/*": ["./src/*"],
+			"@models/*": ["./models/*"],
+			"@controller/*": ["./src/controller/*"],
+			"@validations/*": ["./src/validations/*"],
+			"@utils/*": ["./src/helpers/*"]
+		}
+	},
+	"exclude": ["node_modules"]
+}
