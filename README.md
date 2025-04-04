@@ -18,7 +18,7 @@ This project follows the approach of Model and controller structure
 
 ## Tech/Framework used
 
-- Node.js 14 or 16
+- Node.js (supported versions are 16 till 20)
 - express
 - yarn
 - socket.io
@@ -41,7 +41,7 @@ This project follows the approach of Model and controller structure
 
 # Run Locally
 
-Install Node.js version `14` or `16`
+Install Node.js version `16` or `20` (LTS)
 
 Install yarn globally
 
@@ -67,7 +67,7 @@ Go to the project directory
   cd nodejs-sequelize-template
 ```
 
-Setup environemnt variables
+Setup environment variables
 
 ```bash
   cp .env.example .env

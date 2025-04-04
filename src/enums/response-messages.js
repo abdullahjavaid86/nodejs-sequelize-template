@@ -12,7 +12,7 @@ exports.responseMessages = {
 	passwordRequired: 'Password cannot be empty',
 	guestOperation: 'This operation can only be performed by guest',
 	authenticationFailed:
-		'Authentication Failed, please check if the token is present in the header',
+		'Authentication Failed, no token provided or token is invalid or expired',
 	authorizationFailed: 'You are not authorize to perform this action',
 	accountDeactivated: 'Your account has been deactivated',
 	generic: {

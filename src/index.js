@@ -15,6 +15,7 @@ const { successResponse, errorResponse } = require('@utils/http_response');
 const { corsOptions } = require('@root/config/app/cors');
 const rateLimiter = require('@src/middlewares/rete-limiter');
 const routes = require('./routes');
+const whitelist = require('@root/config/app/cors');
 
 const uploadDir = './uploads';
 const uploadResizedDir = './uploads/resized';
@@ -45,7 +46,7 @@ const setupApp = (app) => {
 	app.use(cookieParser());
 
 	// * cors and logs
-	app.options(corsOptions);
+	app.options(whitelist);
 	app.use(cors(corsOptions));
 	app.use(morgan('combined', { stream: logger.stream }));
 
