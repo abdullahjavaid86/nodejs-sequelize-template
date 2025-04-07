@@ -72,7 +72,9 @@ Or
 ```bash
 npm init create-nodejs-sequelize-app <project-name>
 ```
+
 ## Manual Installation
+
 Clone the project
 
 ```bash

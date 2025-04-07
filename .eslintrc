@@ -37,7 +37,16 @@
 		],
 		"no-debugger": "warn"
 	},
-	"ignorePatterns": ["dist", "node_modules", "coverage", "build", "public", "bin"],
+	"ignorePatterns": [
+		"dist",
+		"node_modules",
+		"coverage",
+		"build",
+		"public",
+		"bin",
+		"/src/types/",
+		"**/*.d.ts"
+	],
 	"settings": {
 		"import/resolver": {
 			"alias": {
