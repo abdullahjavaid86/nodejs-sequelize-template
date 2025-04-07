@@ -4,6 +4,10 @@
 
 nodejs-sequelize-template
 
+A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and Sequelize.
+
+By running a single command, you will get a production-ready Node.js app installed and fully configured on your machine. The app comes with many built-in features, such as authentication using JWT, request validation, pagination, etc. For more details, check the features list below.
+
 ## Inspiration
 
 I have created this template to enable nodejs developers to start the project from scratch that is scalable, optimized and easy to maintain
@@ -55,10 +59,24 @@ Install sequelize-cli globally
   npm i -g sequelize-cli
 ```
 
+## Quick Start
+
+To create a project, simply run:
+
+```bash
+npx create-nodejs-sequelize-app <project-name>
+```
+
+Or
+
+```bash
+npm init create-nodejs-sequelize-app <project-name>
+```
+## Manual Installation
 Clone the project
 
 ```bash
-  git clone https://github.com/abdullahjavaid86/nodejs-sequelize-template
+  git clone --depth 1 https://github.com/abdullahjavaid86/nodejs-sequelize-template
 ```
 
 Go to the project directory

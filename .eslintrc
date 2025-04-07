@@ -37,6 +37,7 @@
 		],
 		"no-debugger": "warn"
 	},
+	"ignorePatterns": ["dist", "node_modules", "coverage", "build", "public", "bin"],
 	"settings": {
 		"import/resolver": {
 			"alias": {
